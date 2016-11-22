@@ -4,4 +4,7 @@
   <h1 class="todo-header">Your Task!</h1>
  <h3>NAME: <%= @task.name%></h3>
   <p><strong>DESCRIPTION: </strong><%= @task.describe%></p>
+  <%= link_to "Delete", task_path(task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
 </div>

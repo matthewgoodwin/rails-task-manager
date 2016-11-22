@@ -7,6 +7,10 @@
     <h3><%=task.name%></h2>
     <li>description: <%= task.describe %></li>
     <li>completed: <%= task.done %></li>
+
+    <%= link_to "Delete", task_path(task), method: :delete, data: { confirm: "Are you sure?" } %><!--task is the element in the loop-->
+
+    <%= link_to "Edit", edit_task_path(task)%> <!--task is the element in the loop-->
   <% end %>
   </ul>
 </div><!--end of all task-->

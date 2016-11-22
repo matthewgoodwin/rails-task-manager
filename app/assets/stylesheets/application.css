@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ .todo-header{
+  text-align: center;
+ }
+
+.your-task{
+  margin: 50px auto;
+    width: 50%;
+    border: 3px solid rgb(230,230,230);
+    padding: 10px;
+}
+
+.all-tasks{
+    margin: 50px auto;
+    width: 50%;
+    border: 3px solid rgb(230,230,230);
+    padding: 10px;
+}
+
+li{
+  list-style: none;
+}

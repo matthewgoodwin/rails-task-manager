@@ -1,0 +1,53 @@
+<!-- <h1>Tasks#new</h1> -->
+<!-- <p>Find me in app/views/tasks/new.html.erb</p> -->
+<!-- params is the the default hash that is cretaed with the post.. it traps all the content ad passess it-->
+<!-- creating a hash 'task' will trap app the data, and pass it to params-->
+<!-- example below-->
+
+<!-- <form action="/restaurants" method="post">
+  <label for="name">Name: </label>
+  <input type="text" name="restaurant[name]" id="name">
+
+  <label for="address">Address: </label>
+  <input type="text" name="restaurant[address]" id="address">
+
+  <input type="submit">
+</form> -->
+<!-- On POST, the params will be populated with
+ params
+{
+  restaurant: {
+    name: "La tour d'argent",
+    address: "15 Quai de la Tournelle"
+  }
+} -->
+
+<!--and another one-->
+
+<!-- <form action="/tasks" method="post">
+  <label for="name">Name: </label>
+  <input type="text" name="task[name]" id="name">
+
+  <label for="describe">Description: </label>
+  <input type="text" name="task[describe]" id="describe">
+
+  <input type="submit">
+</form>
+
+ params
+{
+  restaurant: {
+    name: "wash window",
+    describe: "wash the windows on the third floor"
+  }
+}
+ -->
+
+
+
+ <!--NEW-->
+<!-- this is done for 'new' and 'edit' SO we create a partial to be dry on '_form.html.erb-->
+
+<!-- app/views/tasks/_form.html.erb -->
+<%= render 'form' %>
+

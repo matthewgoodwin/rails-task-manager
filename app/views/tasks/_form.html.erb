@@ -1,0 +1,9 @@
+<!-- created for the 'new' and 'edit' methods-->
+<!-- @task sets the :name and :describe for the params[:task], these are passed as a hash to the Task.new(..)-->
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :describe %>
+  <%= f.text_field :describe %>
+  <%= f.submit %>
+<% end %>

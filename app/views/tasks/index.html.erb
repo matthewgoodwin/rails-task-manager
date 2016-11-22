@@ -1,0 +1,12 @@
+<!-- <h1>Tasks#index</h1> -->
+<!-- <p>Find me in app/views/tasks/index.html.erb</p> -->
+<div class="all-tasks">
+  <h1  class="todo-header">todo</h1>
+  <ul>
+  <% @tasks.each do |task| %>
+    <h3><%=task.name%></h2>
+    <li>description: <%= task.describe %></li>
+    <li>completed: <%= task.done %></li>
+  <% end %>
+  </ul>
+</div><!--end of all task-->
